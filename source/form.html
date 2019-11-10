@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Форма заказа</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="" width="86" height="35" alt="Логотип магазина Мишка"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list menu-list">
+        <li class="menu-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="menu-list__item"><a>Вязание на заказ</a></li>
+        <li class="menu-list__item"><a href="">Поиск по сайту</a></li>
+        <li class="menu-list__item"><a href="">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Вязание на заказ</h1>
+    <section class="order">
+      <form class="order__form" action="https://htmlacademy.ru/intensive/adaptive" method="post">
+        <fieldset class="order__type">
+          <legend>Тип</legend>
+          <label><input type="radio" name="interior-accessory">Аксессуар для интерьера</label>
+          <label><input type="radio" name="toy">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="order__color">
+          <legend>Цвет</legend>
+          <label><input type="checkbox" checked>Белый</label>
+          <label><input type="checkbox" checked>Серый</label>
+          <label><input type="checkbox">«Тиффани»</label>
+          <label><input type="checkbox">Черный</label>
+          <label><input type="checkbox">Розовый</label>
+          <label><input type="checkbox">Оранжевый</label>
+        </fieldset>
+        <fieldset class="order__customer-name">
+          <legend>ФИО</legend>
+          <label>Имя:<input type="text" placeholder="Введите ваше имя*"></label>
+          <label>Фамилия:<input type="text" placeholder="Укажите фамилию*"></label>
+          <label>Отчество:<input type="text" placeholder="Отчество, если желаете"></label>
+        </fieldset>
+        <fieldset class="order__customer-phone">
+          <legend>Тел</legend>
+          <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+        <fieldset class="order__customer-email">
+          <legend>E-mail</legend>
+          <input type="text" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="order__customer-info">
+          <legend>Доп</legend>
+          <textarea name="customer-info" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="order__note">*Поля обязательны для заполнения</p>
+        <button class="button" type="button">Отправить заказ</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--instagram" href="#" aria-label="Перейти на страницу Инстаграмм"></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#" aria-label="Перейти на страницу Фейсбук"></a></li>
+        <li class="social__item"><a class="social__link social__link--tweeter" href="#" aria-label="Перейти на страницу Твиттер"></a></li>
+      </ul>
+    </div>
+    <div class="developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="#" aria-label="Перейти на сайт разработчика"><img src="#" width="27" height="34" alt="Логотип разработчика сайта"></a>
+    </div>
+  </footer>
+</body>
+</html>
