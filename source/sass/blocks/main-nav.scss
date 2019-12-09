@@ -1,0 +1,20 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__item a {
+  display: block;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  text-align: center;
+}

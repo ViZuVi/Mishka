@@ -1,0 +1,70 @@
+.week-special {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.week-special__good-name {
+  @include section-titles;
+  order: -1;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.week-special__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $azure-color-light;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.week-special__good-description {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.week-special__features {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  border-collapse: collapse;
+}
+
+.week-special__features td {
+  border-bottom: 1px solid #ececec;
+}
+
+.week-special__feature-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 88px;
+}
+
+.week-special__feature-value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.week-special__order-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.week-special__price {
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #444444;
+}
+
+.button {
+  @include buttons;
+}
