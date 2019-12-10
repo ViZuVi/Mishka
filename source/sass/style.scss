@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
+@import "fonts.scss";
 @import "blocks/scaffolding.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -15,4 +16,8 @@
 @import "blocks/page-main.scss";
 @import "blocks/goods-list.scss";
 @import "blocks/production-process.scss";
-@import "blocks/order.scss"
+@import "blocks/order.scss";
+@import "blocks/good.scss";
+@import "blocks/good-description.scss";
+@import "blocks/button.scss";
+@import "blocks/section-title.scss";

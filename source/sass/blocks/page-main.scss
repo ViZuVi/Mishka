@@ -20,3 +20,9 @@
   color: #444444;
   margin: 30px;
 }
+
+.page-main iframe {
+  width: $mobile-width-only;
+  height: 457px;
+  border: none;
+}

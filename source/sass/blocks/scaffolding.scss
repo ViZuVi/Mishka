@@ -1,15 +1,15 @@
-@font-face {
-  font-weight: normal;
-  font-family: "Open Sans";
-  font-style: normal;
-  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+html {
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-weight: bold;
-  font-family: "Open Sans";
-  font-style: normal;
-  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -29,7 +29,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -43,10 +43,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.page-main iframe {
-  width: $mobile-width-only;
-  height: 457px;
-  border: none;
 }

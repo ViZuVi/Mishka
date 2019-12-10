@@ -5,7 +5,6 @@
 }
 
 .week-special__good-name {
-  @include section-titles;
   order: -1;
   margin-bottom: 0;
   margin-left: 30px;
@@ -65,6 +64,6 @@
   color: #444444;
 }
 
-.button {
-  @include buttons;
+.week-special__btn {
+  width: 259px;
 }

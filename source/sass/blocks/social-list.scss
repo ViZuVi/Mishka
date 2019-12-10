@@ -21,22 +21,18 @@
   text-decoration: none;
   width: 28px;
   height: 28px;
-}
-
-.social-list__link--instagram {
-  background-image: url("../../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
 
-.social-list__link--facebook {
-  background-image: url("../../img/icon-fb.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &--instagram {
+    background-image: url("../../img/icon-insta.svg");
+  }
 
-.social-list__link--twitter {
-  background-image: url("../../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  &--facebook {
+    background-image: url("../../img/icon-fb.svg");
+  }
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+  }
 }
