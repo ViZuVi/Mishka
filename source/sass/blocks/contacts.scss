@@ -1,0 +1,34 @@
+.contacts {
+  margin-top: 44px;
+  margin-bottom: 42px;
+  margin-left: 30px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__email-wrapper {
+  font-size: 15px;
+  color: #444444;
+}
+
+.contacts__email {
+  font-size: 15px;
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px solid $azure-color-dark;
+  margin-left: 30px;
+}
+
+.contacts__adress-wrapper {
+  display: flex;
+  font-size: 15px;
+  color: #444444;
+}
+
+.contacts__adress-wrapper address {
+  font-style: normal;
+  margin-left: 30px;
+}

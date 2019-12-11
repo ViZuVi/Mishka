@@ -1,0 +1,39 @@
+.good {
+  margin: 30px;
+}
+
+.good__name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.good__image {
+  display: block;
+}
+
+.good__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.good__features {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+  margin-bottom: 27px;
+}
+
+.good__price-wrapper {
+  padding-top: 27px;
+  border-top: 1px solid #ededed;
+}
+
+.good__price {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
