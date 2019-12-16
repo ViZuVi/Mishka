@@ -1,0 +1,142 @@
+.site-nav--third {
+  display: none;
+}
+
+.site-nav__list {
+  @include list-reset;
+}
+
+.site-nav__item {
+  border: 1px solid #ececec;
+
+  .site-nav__item-link {
+    display: block;
+    text-decoration: none;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 31px;
+    margin-bottom: 31px;
+    text-align: center;
+  }
+}
+
+.site-nav__note {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    &--first {
+      order: 3;
+      font-size: 15px;
+      padding-left: 50px;
+      background-color: #f9f9f9;
+    }
+
+    &--second {
+      order: 2;
+    }
+
+    &--third {
+      display: none;
+    }
+  }
+
+  .site-nav__note {
+    display: block;
+    order: 4;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 50px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-nav__item-link {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .site-nav__item--search {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    padding: 0 41px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/icon-search.svg");
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 19px;
+      transform: translate(-9px, 35px);
+    }
+  }
+
+  .site-nav__item--cart {
+    padding-left: 84px;
+    padding-right: 50px;
+  }
+
+  .site-nav__item--main {
+    border: none;
+
+    .site-nav__item-link {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      margin-right: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    &--first {
+      font-size: 17px;
+      background-color: #ffffff;
+    }
+
+    &--second {
+      order: 3;
+    }
+
+    &--third {
+      display: block;
+      order: 4;
+      font-size: 15px;
+      background-color: #f9f9f9;
+
+      .site-nav__item {
+        padding-left: 50px;
+        border: none;
+      }
+    }
+  }
+
+  .page-header__logo {
+    order: 2;
+  }
+
+  .site-nav__item--main {
+    .site-nav__item-link {
+      margin-top: 31px;
+      margin-bottom: 31px;
+    }
+  }
+}

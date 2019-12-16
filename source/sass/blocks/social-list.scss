@@ -1,13 +1,12 @@
 .social-list {
-  list-style: none;
+  @include list-reset;
+  width: 141px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 57px;
-  padding-right: 62px;
   border-bottom: 1px solid #e5e5e5;
 }
 

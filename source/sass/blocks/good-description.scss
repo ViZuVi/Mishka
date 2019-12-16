@@ -5,3 +5,9 @@
   padding-left: 27px;
   padding-right: 27px;
 }
+
+@media (min-width: $tablet-width) {
+  .good-description {
+    flex-grow: 1;
+  }
+}

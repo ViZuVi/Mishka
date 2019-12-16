@@ -4,11 +4,16 @@
   flex-wrap: wrap;
 }
 
+.week-special__titles-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
 .week-special__good-name {
   order: -1;
-  margin-bottom: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 30px;
 }
 
 .week-special__title {
@@ -17,8 +22,7 @@
   font-weight: bold;
   color: $azure-color-light;
   text-transform: uppercase;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 30px;
 }
 
 .week-special__good-description {
@@ -26,6 +30,7 @@
   margin-right: 30px;
   font-size: 15px;
   line-height: 30px;
+  color: #444444;
 }
 
 .week-special__features {
@@ -57,6 +62,12 @@
   margin-right: 30px;
 }
 
+.week-special__image {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+}
+
 .week-special__price {
   line-height: 24px;
   font-weight: bold;
@@ -66,4 +77,103 @@
 
 .week-special__btn {
   width: 259px;
+}
+
+@media (min-width: $tablet-width) {
+  .week-special__titles-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 60px;
+  }
+
+  .week-special {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: column;
+  }
+
+  .week-special__good-name {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .week-special__title {
+    width: 100px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .week-special__good-description {
+    margin: 0 0 50px 0;
+    width: 292px;
+    font-size: 17px;
+    color: #464646;
+    z-index: 2;
+  }
+
+  .week-special__image {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    margin: 0;
+  }
+
+  .week-special__features {
+    margin: 0;
+    width: 292px;
+    color: #464646;
+  }
+
+  .week-special__order-wrapper {
+    width: 292px;
+    margin: 60px 0 55px;
+  }
+
+  .week-special__price {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-special__titles-wrapper {
+    margin-top: 135px;
+    justify-content: flex-start;
+  }
+
+  .week-special__good-name {
+    order: 2;
+    margin-left: 55px;
+  }
+
+  .week-special__title {
+    margin-left: 50px;
+  }
+
+  .week-special__good-description {
+    margin-left: 210px;
+    color: #444444;
+  }
+
+  .week-special__features {
+    margin-left: 210px;
+    color: #444444;
+  }
+
+  .week-special__image {
+    right: 50px;
+  }
+
+  .week-special__order-wrapper {
+    margin-left: 210px;
+    margin-top: 110px;
+  }
+
+  .week-special__price {
+    margin-bottom: 55px;
+  }
 }

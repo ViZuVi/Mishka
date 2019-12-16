@@ -1,5 +1,5 @@
 .good {
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .good__name {
@@ -36,4 +36,43 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .good {
+    width: 665px;
+    display: flex;
+
+    a {
+      display: block;
+    }
+  }
+
+  .good__name {
+    font-size: 20px;
+  }
+
+  .good__features {
+    font-size: 15px;
+    margin-bottom: 185px;
+  }
+
+  .good__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    justify-content: space-between;
+  }
+
+  .good {
+    width: 316px;
+    flex-direction: column;
+  }
+
+  .good__features {
+    margin-bottom: 45px;
+  }
 }

@@ -23,14 +23,25 @@
         </g>
       </svg>
     </a>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a>Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-        <li class="main-nav__item"><a href="">Поиск по сайту</a></li>
-        <li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
+    <nav class="site-nav site-nav--first">
+      <ul class="site-nav__list">
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link">Каталог товаров</a></li>
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link" href="form.html">Вязание на заказ</a></li>
       </ul>
     </nav>
+    <nav class="site-nav site-nav--second">
+      <ul class="site-nav__list">
+        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link" href="">Поиск по сайту</a></li>
+        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link" href="">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+    <nav class="site-nav site-nav--third">
+      <ul class="site-nav__list">
+        <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Новые поступления</a></li>
+        <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Распродажа</a></li>
+      </ul>
+    </nav>
+    <p class="site-nav__note">Бесплатная доставка по России</p>
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
@@ -92,6 +103,7 @@
       </div>
     </section>
     <footer class="page-footer">
+      <a class="footer__logo-link"><img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип магазина" width="101.615" height="34.056"></a>
       <ul class="social-list">
         <li class="social-list__item"><a class="social-list__link social-list__link--instagram" href="#" aria-label="Перейти на страницу Инстаграмм"></a></li>
         <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти на страницу Фейсбук"></a></li>
