@@ -32,6 +32,10 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
+
+    iframe {
+      width: $tablet-width;
+    }
   }
 
   .page-main__title {

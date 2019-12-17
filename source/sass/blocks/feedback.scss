@@ -2,3 +2,10 @@
   margin: 39px auto;
   width: 259px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback__btn {
+    margin-top: 55px;
+    margin-bottom: 57px;
+  }
+}
