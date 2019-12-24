@@ -1,7 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  width: $mobile-width-only;
   margin: 0 auto;
 }
 
@@ -13,7 +12,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: $tablet-width;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -22,19 +20,14 @@
     order: 1;
     margin: 0;
     padding-left: 50px;
-    padding-right: 230px;
+    padding-right: 210px;
     padding-top: 23px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ececec;
-    border-right: 1px solid #ececec;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    width: $desktop-width;
-  }
-
   .page-header__logo {
     order: 1;
     padding-right: 0;

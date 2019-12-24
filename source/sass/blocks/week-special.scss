@@ -13,7 +13,8 @@
 
 .week-special__good-name {
   order: -1;
-  margin: 0 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .week-special__title {
@@ -22,20 +23,17 @@
   font-weight: bold;
   color: $azure-color-light;
   text-transform: uppercase;
-  margin: 0 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .week-special__good-description {
-  margin-left: 30px;
-  margin-right: 30px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
 
 .week-special__features {
-  margin-left: 30px;
-  margin-right: 30px;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
@@ -57,14 +55,7 @@
   padding-bottom: 10px;
 }
 
-.week-special__order-wrapper {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .week-special__image {
-  margin-left: 30px;
-  margin-right: 30px;
   padding-top: 30px;
 }
 
@@ -90,8 +81,6 @@
   }
 
   .week-special {
-    padding-left: 50px;
-    padding-right: 50px;
     flex-direction: column;
   }
 
@@ -118,7 +107,7 @@
 
   .week-special__image {
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 140px;
     margin: 0;
   }
@@ -147,20 +136,16 @@
 
   .week-special__good-name {
     order: 2;
-    margin-left: 55px;
-  }
-
-  .week-special__title {
-    margin-left: 50px;
+    margin-left: 70px;
   }
 
   .week-special__good-description {
-    margin-left: 210px;
+    margin-left: 175px;
     color: #444444;
   }
 
   .week-special__features {
-    margin-left: 210px;
+    margin-left: 175px;
     color: #444444;
   }
 
@@ -169,7 +154,7 @@
   }
 
   .week-special__order-wrapper {
-    margin-left: 210px;
+    margin-left: 175px;
     margin-top: 110px;
   }
 

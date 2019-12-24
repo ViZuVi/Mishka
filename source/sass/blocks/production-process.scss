@@ -1,5 +1,5 @@
 .production-process {
-  margin: 30px;
+  margin-bottom: 53px;
 }
 
 .production-process__title {
@@ -26,4 +26,20 @@
 
 .production-process__order-btn {
   width: 188px;
+}
+
+@media (min-width: $tablet-width) {
+  .production-process {
+    margin-bottom: 62px;
+  }
+
+  .production-process__order-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production-process {
+    margin-bottom: 105px;
+  }
 }

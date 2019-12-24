@@ -1,5 +1,13 @@
 .goods-list {
   @include list-reset;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    flex-direction: row;
+  }
 }

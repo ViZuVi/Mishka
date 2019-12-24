@@ -14,7 +14,6 @@ a {
 
 body {
   min-width: 320px;
-  width: $mobile-width-only;
   font-size: 17px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -45,16 +44,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: $desktop-width;
-  }
 }
