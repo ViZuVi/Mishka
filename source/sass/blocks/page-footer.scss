@@ -1,7 +1,25 @@
 .page-footer {
-  width: $mobile-width-only;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #f1f1f1;
+  align-items: center;
+}
+
+.footer__logo-link {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+  }
+
+  .footer__logo-link {
+    display: block;
+  }
 }

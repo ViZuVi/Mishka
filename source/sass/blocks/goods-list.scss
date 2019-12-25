@@ -1,7 +1,13 @@
 .goods-list {
+  @include list-reset;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+}
+
+
+@media (min-width: $desktop-width) {
+  .goods-list {
+    flex-direction: row;
+  }
 }

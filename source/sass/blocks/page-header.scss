@@ -1,15 +1,36 @@
 .page-header {
-  width: $mobile-width-only;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
-
-.page-header__logo-image {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 
 .page-header__logo {
   display: block;
   margin: 20px auto;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    order: 1;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 210px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    order: 1;
+    padding-right: 0;
+    flex-grow: 1;
+  }
 }

@@ -1,0 +1,45 @@
+.basket-modal {
+  position: absolute;
+  width: $mobile-width-only;
+  padding-top: 36px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 #c6c6c6;
+}
+
+.basket-modal__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.basket-modal__size-select {
+  font-size: 15px;
+}
+
+.basket-modal__size-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button--size {
+  width: 78px;
+  border-color: rgba(241, 241, 241, 0.9);
+
+  &:first-child {
+    border-color: rgba(99, 209, 187, 0.9);
+  }
+}
+
+.button--add {
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgba(99, 209, 187, 0.9);
+  border-color: rgba(99, 209, 187, 0.9);
+}

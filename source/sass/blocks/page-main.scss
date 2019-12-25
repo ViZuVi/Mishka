@@ -1,8 +1,10 @@
 .page-main {
-  width: $mobile-width-only;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-main__title {
+  margin: 0;
   padding-top: 75px;
   padding-bottom: 80px;
   padding-left: 38px;
@@ -10,6 +12,7 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  text-align: center;
   border-top: 1px solid #ececec;
   background-color: #f1f1f1;
 }
@@ -19,10 +22,4 @@
   line-height: 24px;
   color: #444444;
   margin: 30px;
-}
-
-.page-main iframe {
-  width: $mobile-width-only;
-  height: 457px;
-  border: none;
 }
