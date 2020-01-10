@@ -1,6 +1,6 @@
 .feedback {
-  margin-top: 44px;
-  margin-bottom: 57px;
+  margin-top: 87px;
+  margin-bottom: 39px;
 }
 
 .feedback__btn {
@@ -12,8 +12,24 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   height: 457px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: 58px;
+    margin-bottom: 59px;
+  }
+
+  .feedback__map {
+    margin-bottom: 46px;
+  }
+
+  .feedback__btn {
+    width: 230px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -22,7 +38,7 @@
     flex-direction: column;
     position: relative;
     margin-bottom: 105px;
-    margin-top: 150px;
+    margin-top: 227px;
   }
 
   .feedback__map {

@@ -23,19 +23,22 @@
         </g>
       </svg>
     </a>
-    <nav class="site-nav site-nav--first">
+    <nav class="site-nav site-nav--first"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
+      <button class="site-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="site-nav__list">
-        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link">Каталог товаров</a></li>
-        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link" href="form.html">Вязание на заказ</a></li>
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link site-nav__item-link--main">Каталог товаров</a></li>
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link site-nav__item-link--main" href="form.html">Вязание на заказ</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--second">
+    <nav class="site-nav site-nav--second"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
       <ul class="site-nav__list">
-        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link" href="">Поиск по сайту</a></li>
-        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link" href="">Корзина: пока пуста</a></li>
+        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link site-nav__item-link--search" href="">Поиск по сайту</a></li>
+        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link site-nav__item-link--cart" href="">Корзина: пока пуста</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--third">
+    <nav class="site-nav site-nav--third"> <!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
       <ul class="site-nav__list">
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Новые поступления</a></li>
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Распродажа</a></li>
@@ -49,7 +52,11 @@
       <ul class="goods-list">
         <li class="good">
           <a href="#">
-            <img class="good__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg">
+              <img class="good__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара Зайчик-попрыгайчик">
+            </picture>
           </a>
           <div class="good-description">
             <a class="good__link" href="#">
@@ -64,7 +71,11 @@
         </li>
         <li class="good">
           <a href="#">
-            <img class="good__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара Корзинка для белья">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+              <img class="good__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара Корзинка для белья">
+            </picture>
           </a>
           <div class="good-description">
             <a class="good__link" href="#">
@@ -79,7 +90,11 @@
         </li>
         <li class="good">
           <a href="#">
-            <img class="good__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/photo-toys-tablet@1x.jpg">
+              <img class="good__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="good-description">
             <a class="good__link" href="#">
@@ -96,7 +111,7 @@
     </section>
     <section class="production-process container">
       <h2 class="production-process__title">Процесс производства</h2>
-      <video class="production-process__video" src="#" width="260" height="150" controls poster="#"></video>
+      <video class="production-process__video" src="#" width="260" height="150" controls poster="img/video-mobile@1x.jpg"></video>
       <div class="production-process__text">
         <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="button production-process__order-btn" type="button">Сделать заказ</button>

@@ -23,19 +23,22 @@
         </g>
       </svg>
     </a>
-    <nav class="site-nav site-nav--first">
+    <nav class="site-nav site-nav--first"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
+      <button class="site-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="site-nav__list">
-        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link" href="catalog.html">Каталог товаров</a></li>
-        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link" href="form.html">Вязание на заказ</a></li>
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link site-nav__item-link--main" href="catalog.html">Каталог товаров</a></li>
+        <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link site-nav__item-link--main" href="form.html">Вязание на заказ</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--second">
+    <nav class="site-nav site-nav--second"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
       <ul class="site-nav__list">
-        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link" href="">Поиск по сайту</a></li>
-        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link" href="">Корзина: пока пуста</a></li>
+        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link site-nav__item-link--search" href="">Поиск по сайту</a></li>
+        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link site-nav__item-link--cart" href="">Корзина: пока пуста</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--third">
+    <nav class="site-nav site-nav--third"> <!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
       <ul class="site-nav__list">
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Новые поступления</a></li>
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Распродажа</a></li>
@@ -47,7 +50,7 @@
     <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы "Мишка"</h1>
     <section class="goods-types">
       <h2 class="visually-hidden">Разделы товаров</h2>
-      <p class="goods-types__slogan">Милые штуки ручной<br> работы для дома</p>
+      <p class="goods-types__slogan">Милые штуки ручной работы для дома</p>
       <ul class="goods-types__list">
         <li class="goods-types__item goods-types__item--interior"><a class="goods-types__link goods-types__link" href="#">Предметы интерьера</a></li>
         <li class="goods-types__item goods-types__item--toys"><a class="goods-types__link goods-types__link" href="#">Детские игрушки</a></li>
@@ -82,12 +85,12 @@
     <section class="features container">
       <h2 class="features__title section-title">Коротко о нас:</h2>
       <ul class="features__list">
-        <li class="features__list-item">Экологически чистые материалы</li>
-        <li class="features__list-item">Скандинавский стиль по российской цене</li>
-        <li class="features__list-item">Увеличивает лайки на фотографиях</li>
-        <li class="features__list-item">Связано вручную с любовью и умилением</li>
-        <li class="features__list-item">Поддержка отечественного производителя</li>
-        <li class="features__list-item">Поставляется в подарочной упаковке</li>
+        <li class="features__list-item features__list-item--ecology">Экологически чистые материалы</li>
+        <li class="features__list-item features__list-item--scandinavian">Скандинавский стиль по российской цене</li>
+        <li class="features__list-item features__list-item--repost">Увеличивает лайки на фотографиях</li>
+        <li class="features__list-item features__list-item--love">Связано вручную с любовью и умилением</li>
+        <li class="features__list-item features__list-item--domestic">Поддержка отечественного производителя</li>
+        <li class="features__list-item features__list-item--gift">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews container">
@@ -98,16 +101,16 @@
         <a class="reviews__author-nik" href="#">@misssssiskras</a>
       </div>
       <div class="reviews__slider-controls">
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <button class="reviews__btn reviews__btn--prev" type="button" aria-label="Предыдущий отзыв"></button>
+        <button class="reviews__btn reviews__btn--next" type="button" aria-label="Следующий отзыв"></button>
       </div>
-      <a class="button reviews__btn" href="#">Написать</a>
+      <a class="button reviews__write-btn" href="#">Написать</a>
     </section>
     <section class="feedback">
     <div class="contacts container">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__email-wrapper">
-        <span>email:</span>
+        <span>e-mail:</span>
         <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
       </div>
       <div class="contacts__adress-wrapper">
