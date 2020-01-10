@@ -1,5 +1,5 @@
 .contacts {
-  margin-bottom: 42px;
+  margin-bottom: 37px;
 }
 
 .contacts__title {
@@ -10,6 +10,7 @@
 .contacts__email-wrapper {
   font-size: 15px;
   color: #444444;
+  margin-top: 26px;
 }
 
 .contacts__email {
@@ -17,7 +18,8 @@
   color: #444444;
   text-decoration: none;
   border-bottom: 1px solid $azure-color-dark;
-  margin-left: 30px;
+  margin-left: 26px;
+  padding-bottom: 4px;
 }
 
 .contacts__adress-wrapper {
@@ -25,6 +27,7 @@
   flex-wrap: wrap;
   font-size: 15px;
   color: #444444;
+  margin-top: 30px;
 
   address {
     font-style: normal;
@@ -41,7 +44,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   .contacts__title {
@@ -57,20 +60,29 @@
       height: 81px;
       background-image: url("../../img/icon-flag.svg");
       background-repeat: no-repeat;
-      right: 0;
-      top: -50%;
+      right: 3px;
+      top: -30%;
     }
   }
 
   .contacts__email-wrapper {
     font-size: 17px;
+    margin-top: 14px;
+  }
+
+  .contacts__email {
+    font-size: 17px;
+    margin-left: 19px;
   }
 
   .contacts__adress-wrapper {
     font-size: 17px;
+    margin-top: 14px;
+    margin-right: 36px;
 
     address {
       width: auto;
+      margin-left: 27px;
     }
   }
 }
@@ -78,11 +90,28 @@
 @media (min-width: $desktop-width) {
   .contacts {
     flex-direction: column;
-    padding-left: 225px;
+    padding-left: 220px;
+    padding-top: 28px;
     margin-bottom: 85px;
   }
 
-  .contacts__title::after {
-    left: -112px;
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      left: -107px;
+      top: -18%;
+    }
+  }
+
+  .contacts__email-wrapper {
+    padding-left: 3px;
+    margin-top: 3px;
+  }
+
+  .contacts__adress-wrapper {
+    padding-left: 3px;
+    margin-top: 30px;
   }
 }

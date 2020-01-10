@@ -1,0 +1,47 @@
+.name-list {
+  @include list-reset;
+  margin-top: 30px;
+}
+
+.name-list__item {
+  margin-top: 23px;
+
+  input {
+    display: block;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.7);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .name-list {
+    position: absolute;
+    top: -54px;
+    left: 28.5%; /*в %% чтобы абсолютный элемент ничего не перекрывал в промежуточных точках*/
+    width: 501px;
+
+    input {
+      padding-top: 0;
+      padding-bottom: 11px;
+      padding-left: 17px;
+      font-size: 19px;
+    }
+  }
+
+  .name-list__item {
+    display: flex;
+    margin-bottom: 41px;
+  }
+
+  .name-list__label {
+    margin-right: 25px;
+  }
+}

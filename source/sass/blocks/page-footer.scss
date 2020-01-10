@@ -13,6 +13,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    min-height: 143px;
     flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;

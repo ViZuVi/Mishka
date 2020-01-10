@@ -1,8 +1,10 @@
 .button {
   display: block;
-  padding-top: 8px;
+  padding-top: 9px;
   padding-bottom: 8px;
   text-align: center;
+  font-size: inherit;
+  line-height: inherit;
   color: #444444;
   font-weight: bold;
   text-transform: uppercase;

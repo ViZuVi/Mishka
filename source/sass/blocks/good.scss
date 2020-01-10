@@ -23,12 +23,24 @@
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
+  margin-top: 4px;
 }
 
 .good__price-wrapper {
-  padding-top: 27px;
+  position: relative;
+  padding-top: 21px;
   border-top: 1px solid #ededed;
+}
+
+.good__basket-icon {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 19px;
+  top: 22px;
+  right: 0;
+  background-image: url("../../img/icon-cart.svg");
 }
 
 .good__price {
@@ -42,23 +54,40 @@
   .good {
     width: 665px;
     display: flex;
+    margin-bottom: 53px;
 
     a {
       display: block;
     }
   }
 
+  .good__image {
+    width: 334px;
+    height: 334px;
+  }
+
   .good__name {
     font-size: 20px;
+    padding-right: 35px;
   }
 
   .good__features {
     font-size: 15px;
-    margin-bottom: 185px;
+    margin-bottom: auto;
+  }
+
+  .good__price-wrapper {
+    padding-top: 22px;
   }
 
   .good__price {
     font-size: 17px;
+    padding-left: 5px;
+  }
+
+  .good__basket-icon {
+    top: 23px;
+    right: 2px;
   }
 }
 
@@ -68,11 +97,29 @@
   }
 
   .good {
-    width: 316px;
+    width: 314px;
     flex-direction: column;
   }
 
   .good__features {
-    margin-bottom: 45px;
+    margin-bottom: auto;
+  }
+
+  .good__price-wrapper {
+    padding-top: 22px;
+    margin-top: 15px;
+  }
+
+  .good__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .good__price {
+    padding-left: 0;
+  }
+
+  .good__basket-icon {
+    right: 11px;
   }
 }
