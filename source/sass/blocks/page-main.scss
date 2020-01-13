@@ -27,10 +27,22 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    font-size: 53px;
-    line-height: 57px;
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
     padding-top: 96px;
     padding-left: 29px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 770px;
+      height: 24px;
+      left: 0;
+      bottom: -15px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-size: contain;
+    }
   }
 
   .page-main__slogan {
@@ -42,7 +54,23 @@
 
 @media (min-width: $desktop-width) {
   .page-main__slogan {
-    margin-top: 145px;
+    padding-top: 119px;
     padding-left: 224px;
+    padding-right: 215px;
+    margin: 0;
+  }
+
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 93px;
+    padding-left: 29px;
+    padding-bottom: 105px;
+
+    &::after {
+      width: 1150px;
+      height: 34px;
+      bottom: -15px;
+    }
   }
 }

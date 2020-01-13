@@ -54,7 +54,7 @@
   .good {
     width: 665px;
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 
     a {
       display: block;
@@ -73,6 +73,7 @@
 
   .good__features {
     font-size: 15px;
+    margin-top: 5px;
     margin-bottom: auto;
   }
 
@@ -113,6 +114,10 @@
   .good__image {
     width: 316px;
     height: 462px;
+  }
+
+  .good__name {
+    padding-right: 40px;
   }
 
   .good__price {

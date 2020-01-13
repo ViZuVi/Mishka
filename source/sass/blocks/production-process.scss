@@ -1,5 +1,5 @@
 .production-process {
-  margin-bottom: 53px;
+  margin-bottom: 57px;
 }
 
 .production-process__title {
@@ -40,12 +40,12 @@
   font-size: 17px;
   margin-top: 25px;
   padding-top: 15px;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .production-process {
-    margin-bottom: 77px;
+    margin-bottom: 64px;
     display: flex;
     flex-direction: column;
   }
@@ -65,13 +65,13 @@
   .production-process__title {
     order: 2;
     font-size: 20px;
-    padding-top: 40px;
+    padding-top: 34px;
     padding-bottom: 17px;
     padding-left: 105px;
     border-bottom: none;
 
     &::before {
-      top: 35px;
+      top: 29px;
       left: 41px;
     }
   }
@@ -82,6 +82,7 @@
     line-height: 30px;
     padding-left: 40px;
     padding-top: 0;
+    padding-bottom: 46px;
     border-top: none;
   }
 }
@@ -100,13 +101,13 @@
   }
 
   .production-process__title {
-    padding-top: 98px;
+    padding-top: 95px;
     padding-left: 79px;
     padding-right: 50px;
     width: 368px;
 
     &::before {
-      top: 44px;
+      top: 41px;
       left: 80px;
     }
   }
@@ -117,7 +118,7 @@
     padding-bottom: 59px;
     width: 368px;
     margin-left: auto;
-    margin-top: -291px; /*пока нет другого решения*/
+    margin-top: -294px;
   }
 
   .production-process__order-btn {

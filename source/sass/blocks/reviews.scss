@@ -4,14 +4,16 @@
   margin-top: 54px;
 
   &::after {
-    position: absolute;
     content: "";
-    width: 320px;
+    bottom: -51px;
+    left: 0;
+    width: 100%;
     height: 6px;
     background-image: url("../../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    bottom: -51px;
+    background-size: cover;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -72,6 +74,20 @@
     padding-right: 50px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 17px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: -103px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .reviews__btn {
@@ -108,6 +124,11 @@
     margin-top: 115px;
     margin-bottom: 184px;
     background-position-x: 50px;
+
+    &::after {
+      height: 23px;
+      bottom: -154px;
+    }
   }
 
   .reviews__text {

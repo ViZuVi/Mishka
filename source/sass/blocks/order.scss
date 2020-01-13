@@ -2,7 +2,8 @@
   margin-bottom: 55px;
 }
 
-.order legend {
+.order__legend {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -10,15 +11,19 @@
   color: $azure-color-light;
   margin-left: -3px;
   width: 64px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    left: 100%;
+    bottom: 50%;
+    border-bottom: 1px solid $azure-color-light;
+  }
 }
 
 .order__box {
-  display: flex;
-  flex-direction: column;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-top: 1px solid $azure-color-light;
+  border: none;
   padding: 0;
   margin: 0;
 
@@ -47,22 +52,6 @@
   }
 }
 
-.order__contacts-input--info {
-  display: block;
-  font-family: inherit;
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba(68, 68, 68, 0.7);
-  width: 100%;
-  margin-top: 25px;
-  padding-left: 15px;
-  padding-top: 14px;
-  padding-right: 75px;
-  padding-bottom: 16px;
-  border: 2px solid rgba(68, 68, 68, 0.7);
-}
-
-
 .order__box label {
   display: block;
   position: relative;
@@ -73,7 +62,6 @@
 }
 
 .order__contacts-input {
-  position: relative;
   display: block;
   width: 100%;
   padding-top: 23px;
@@ -102,6 +90,36 @@
   }
 }
 
+.order__contacts-input--info {
+  display: block;
+  position: relative;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.7);
+  width: 100%;
+  margin-top: 25px;
+  padding-left: 15px;
+  padding-top: 14px;
+  padding-right: 75px;
+  padding-bottom: 16px;
+  border: 2px solid rgba(68, 68, 68, 0.7);
+}
+
+.order__contacts-input--email {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 21px;
+    background-image: url("../../img/icon-mail.svg");
+  }
+}
+
 .order__note {
   margin-top: 16px;
   margin-bottom: 32px;
@@ -119,6 +137,16 @@
     margin-bottom: 0;
   }
 
+  .order__legend {
+    &::after {
+      border: none;
+    }
+  }
+
+  .order__wrapper {
+    display: flex;
+  }
+
   .order__box {
     border: none;
 
@@ -132,9 +160,9 @@
     }
 
     &--colors {
-      margin-top: 11px;
-      padding-top: 66px;
-      padding-bottom: 15px;
+      margin-top: 9px;
+      padding-top: 62px;
+      padding-bottom: 17px;
       background-color: #f1f1f1;
     }
 
@@ -161,7 +189,7 @@
     &--info {
       position: relative;
       padding-top: 68px;
-      padding-bottom: 162px;
+      padding-bottom: 160px;
     }
   }
 
@@ -208,6 +236,12 @@
   }
 
   .order__box__sent-btn {
-    width: 231px;
+    width: 229px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__note-wrapper {
+    margin-left: 65px;
   }
 }
