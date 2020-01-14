@@ -5,13 +5,13 @@
 
   &::after {
     content: "";
+    position: absolute;
     bottom: -41px;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 6px;
     background-image: url("../../img/bg-zigzag-line.svg");
-    background-size: cover;
-    position: absolute;
+    background-size: contain;
     margin-left: auto;
     margin-right: auto;
   }
