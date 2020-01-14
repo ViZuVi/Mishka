@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    margin-top: 58px;
+    margin-top: 36px;
     margin-bottom: 59px;
   }
 
@@ -37,18 +37,18 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 105px;
-    margin-top: 227px;
+    margin-bottom: 108px;
+    margin-top: 160px;
   }
 
   .feedback__map {
-    width: 525px;
+    width: 572px;
     height: 457px;
     position: absolute;
     right: 50px;
   }
 
   .feedback__btn {
-    margin-left: 225px;
+    margin-left: 270px;
   }
 }

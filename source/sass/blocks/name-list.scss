@@ -23,10 +23,10 @@
 
 @media (min-width: $tablet-width) {
   .name-list {
-    position: absolute;
-    top: -54px;
-    left: 28.5%; /*в %% чтобы абсолютный элемент ничего не перекрывал в промежуточных точках*/
-    width: 501px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 124px;
 
     input {
       padding-top: 0;
@@ -39,9 +39,21 @@
   .name-list__item {
     display: flex;
     margin-bottom: 41px;
+    margin-top: 0;
+    width: 500px;
   }
 
   .name-list__label {
     margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name-list {
+    margin-left: 52px;
+  }
+
+  .name-list__item {
+    width: 698px;
   }
 }

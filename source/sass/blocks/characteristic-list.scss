@@ -26,12 +26,26 @@
   cursor: pointer;
 }
 
-.characteristic-list__label--type input {
+.characteristic-list__input + .characteristic-list__label--type {
   &::before {
     position: absolute;
     content: "";
-    left: -60px;
     top: -7px;
+    margin-left: -60px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 9px solid #ffffff;
+    box-shadow: 0 0 0 2px #444444;
+  }
+}
+
+.characteristic-list__input:checked + .characteristic-list__label--type {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    margin-left: -60px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -41,15 +55,48 @@
   }
 }
 
+.characteristic-list__input + .characteristic-list__label--color {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    margin-left: -63px;
+    width: 40px;
+    height: 39px;
+    border: 2px solid #444444;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+  }
+}
+
+.characteristic-list__input:checked + .characteristic-list__label--color {
+  &::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    margin-left: -63px;
+    width: 40px;
+    height: 39px;
+    border: 2px solid #444444;
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 22px 16px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .characteristic-list {
-    margin-top: -19px;
-    margin-left: 184px;
+    margin-left: 122px;
+    margin-top: 0;
 
     &--colors {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-left: 138px;
     }
   }
 
@@ -61,6 +108,44 @@
     &--color {
       width: 159px;
       margin-bottom: 54px;
+    }
+  }
+
+  .characteristic-list__input + .characteristic-list__label--type,
+  .characteristic-list__input:checked + .characteristic-list__label--type {
+    &::before {
+      top: -14px;
+      margin-left: -77px;
+      width: 47px;
+      height: 47px;
+      border: 12px solid #ffffff;
+    }
+  }
+
+  .characteristic-list__input + .characteristic-list__label--color,
+  .characteristic-list__input:checked + .characteristic-list__label--color {
+    &::before {
+      top: -15px;
+      margin-left: -79px;
+      width: 54px;
+      height: 52px;
+      background-size: 33px 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .characteristic-list {
+    margin-left: 66px;
+
+    &--colors {
+      width: 730px;
+    }
+  }
+
+  .characteristic-list__item {
+    &--color {
+      width: 141px;
     }
   }
 }
