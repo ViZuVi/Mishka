@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Мишка: интернет-магазин игрушек ручной работы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -76,7 +76,7 @@
       </picture>
       <div class="week-special__order-wrapper">
         <p class="week-special__price">Цена: 990 руб.</p>
-        <a class="button week-special__btn">Заказать</a>
+        <a class="button week-special__btn" href="#">Заказать</a>
       </div>
     </section>
     <section class="features container">
@@ -140,7 +140,7 @@
       </div>
     </footer>
   </main>
-  <section class="visually-hidden">
+  <section class="basket-modal basket-modal--show">
     <h2 class="basket-modal__title">Добавить в корзину</h2>
     <p class="basket-modal__size-select">Выберите размер:</p>
     <div class="basket-modal__size-wrapper">
@@ -150,5 +150,6 @@
     </div>
     <button class="button button--add" type="button">Добавить</button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>

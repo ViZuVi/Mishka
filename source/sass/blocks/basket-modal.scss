@@ -1,5 +1,6 @@
 .basket-modal {
-  position: absolute;
+  display: none;
+  position: fixed;
   width: $mobile-width-only;
   padding-top: 36px;
   padding-bottom: 46px;
@@ -7,6 +8,10 @@
   padding-right: 30px;
   text-align: center;
   box-shadow: 0 2px 2px 0 #c6c6c6;
+
+  &--show {
+    display: flex;
+  }
 }
 
 .basket-modal__title {
