@@ -31,7 +31,8 @@
   background-image: url("../../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
     background-image: url("../../img/video-mobile@2x.jpg");
   }
 }
@@ -45,6 +46,14 @@
   line-height: 24px;
   color: #444444;
   border: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0 3px 4px 5px #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 2px 6px 3px #ececec;
+  }
 }
 
 .production-process__order-btn {
@@ -67,7 +76,8 @@
     height: 455px;
     background-image: url("../../img/video-tablet@1x.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
       background-image: url("../../img/video-tablet@2x.jpg");
     }
   }
@@ -117,7 +127,8 @@
     height: 455px;
     background-image: url("../../img/video-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
       background-image: url("../../img/video-desktop@2x.jpg");
     }
   }

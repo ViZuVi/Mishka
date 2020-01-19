@@ -80,7 +80,8 @@
     background-repeat: no-repeat;
     background-size: 350px 457px;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
       background-image: url("../../img/review@2x.jpg");
     }
 

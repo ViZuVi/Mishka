@@ -4,6 +4,14 @@
   padding-bottom: 27px;
   padding-left: 27px;
   padding-right: 27px;
+
+  &:hover {
+    box-shadow: 0 3px 4px 5px #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 2px 6px 3px #ececec;
+  }
 }
 
 @media (min-width: $tablet-width) {
