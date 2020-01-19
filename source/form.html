@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Форма заказа</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 <body>
   <header class="page-header">
@@ -16,7 +18,7 @@
         <img class="page-header__img" src="img/logo-mobile.svg" width="86" height="35" alt="Фото товара Корзинка для белья">
       </picture>
     </a>
-    <nav class="site-nav site-nav--first"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
+    <nav class="site-nav site-nav--first"><!--site-nav--closed класс для закрытия меню, site-nav--opened для открытия-->
       <button class="site-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -25,13 +27,13 @@
         <li class="site-nav__item site-nav__item--main"><a class="site-nav__item-link site-nav__item-link--main">Вязание на заказ</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--second"><!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
+    <nav class="site-nav site-nav--second"><!--site-nav--closed класс для закрытия меню, site-nav--opened для открытия-->
       <ul class="site-nav__list">
         <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link site-nav__item-link--search" href="">Поиск по сайту</a></li>
         <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link site-nav__item-link--cart" href="">Корзина: пока пуста</a></li>
       </ul>
     </nav>
-    <nav class="site-nav site-nav--third"> <!--site-nav--closed класс для закрытия меню, нужно будет добваить с помощью js-->
+    <nav class="site-nav site-nav--third"><!--site-nav--closed класс для закрытия меню, site-nav--opened для открытия-->
       <ul class="site-nav__list">
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Новые поступления</a></li>
         <li class="site-nav__item site-nav__item--special"><a class="site-nav__item-link" href="">Распродажа</a></li>
@@ -96,15 +98,15 @@
             <ul class="name-list">
               <li class="name-list__item">
                 <label class="name-list__label" for="first-name">Имя:</label>
-                <input type="text" placeholder="Введите ваше имя*" id="first-name" required>
+                <input class="order__legend__name-input" type="text" placeholder="Введите ваше имя*" id="first-name" required>
               </li>
               <li class="name-list__item">
                 <label class="name-list__label" for="surname">Фамилия:</label>
-                <input type="text" placeholder="Укажите фамилию*" id="surname" required>
+                <input class="order__legend__name-input" type="text" placeholder="Укажите фамилию*" id="surname" required>
               </li>
               <li class="name-list__item">
                 <label class="name-list__label" for="patronymic">Отчество:</label>
-                <input type="text" placeholder="Отчество, если желаете" id="patronymic">
+                <input class="order__legend__name-input" type="text" placeholder="Отчество, если желаете" id="patronymic">
               </li>
             </ul>
           </div>
@@ -112,13 +114,13 @@
         <fieldset class="order__box order__box--phone">
           <div class="order__wrapper order__wrapper--phone container">
             <legend class="order__legend">Тел</legend>
-            <input class="order__contacts-input order__contacts-input--phone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <input class="order__contacts-input order__contacts-input--phone" type="tel" pattern="^\+7\d{3}\d{7}$" maxlength="12" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </div>
         </fieldset>
         <fieldset class="order__box order__box--email">
           <div class="order__wrapper order__wrapper--email container">
             <legend class="order__legend">E-mail</legend>
-            <input class="order__contacts-input order__contacts-input--email" type="text" placeholder="Ваш Email*" required>
+            <input class="order__contacts-input order__contacts-input--email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
         <fieldset class="order__box order__box--info">
@@ -129,7 +131,7 @@
         </fieldset>
         <div class="order__wrapper order__wrapper--note container">
           <p class="order__note">*Поля обязательны для заполнения</p>
-          <button class="button order__box__sent-btn" type="button">Отправить заказ</button>
+          <button class="button order__box__sent-btn" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>

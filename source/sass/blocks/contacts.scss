@@ -20,6 +20,14 @@
   border-bottom: 1px solid $azure-color-dark;
   margin-left: 26px;
   padding-bottom: 4px;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__adress-wrapper {
