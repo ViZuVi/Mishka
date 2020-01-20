@@ -48,7 +48,17 @@
   height: 19px;
   top: 22px;
   right: 0;
-  background-image: url("../../img/icon-cart.svg");
+  opacity: 0.2;
+}
+
+.good__icon-cart {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .good__price {
@@ -95,7 +105,7 @@
   }
 
   .good__basket-icon {
-    top: 23px;
+    top: 19px;
     right: 2px;
   }
 }
@@ -133,6 +143,6 @@
   }
 
   .good__basket-icon {
-    right: 11px;
+    right: 22px;
   }
 }

@@ -34,7 +34,7 @@
   padding-top: 26px;
   padding-bottom: 28px;
   padding-left: 29px;
-  padding-right: 75%;
+  padding-right: 80%;
   margin-right: 120px;
   text-decoration: none;
   font-size: 19px;
@@ -48,19 +48,11 @@
 }
 
 .goods-types__item {
-  &--interior {
-    position: relative;
-    background-color: #63d1bb;
+  width: 100%;
+  position: relative;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 40px;
-      height: 62px;
-      background-image: url("../../img/icon-interior.svg");
-      top: 23px;
-      right: 36px;
-    }
+  &--interior {
+    background-color: #63d1bb;
 
     &:hover {
       transform: translateY(-5px);
@@ -73,20 +65,27 @@
     position: relative;
     background-color: #56c3b2;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 60px;
-      background-image: url("../../img/icon-toy.svg");
-      top: 21px;
-      right: 27px;
-    }
-
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px #46c1ae;
       transition-duration: 0.3s;
+    }
+  }
+
+  .good-types__icon-interior,
+  .good-types__icon-toy {
+    position: absolute;
+    top: 30px;
+    right: 36px;
+    opacity: 0.5;
+    fill: #3bb09d;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -129,7 +128,7 @@
 
   .goods-types__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .goods-types__link {

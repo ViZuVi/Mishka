@@ -10,6 +10,8 @@
   text-transform: uppercase;
   color: $azure-color-light;
   margin-left: -3px;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 64px;
 
   &::after {
@@ -61,6 +63,10 @@
   color: #000000;
 }
 
+.order__wrapper {
+  position: relative;
+}
+
 .order__contacts-input {
   display: block;
   width: 100%;
@@ -75,19 +81,6 @@
   border-bottom: 2px solid #000000;
   background-repeat: no-repeat;
   background-position-y: 18px;
-
-  &--phone {
-    background-image: url("../../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 227px;
-  }
-
-  &--email {
-    background-image: url("../../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position-x: 224px;
-  }
 
   &--info {
     display: block;
@@ -113,6 +106,19 @@
   &:focus {
     outline: none;
     color: rgba(0, 0, 0, 1);
+  }
+}
+
+.order__icon-phone,
+.order__icon-mail {
+  position: absolute;
+  right: 38px;
+  top: 32px;
+  opacity: 0.2;
+
+  &:hover {
+    fill: #62d1ba;
+    opacity: 1;
   }
 }
 
@@ -249,6 +255,12 @@
     }
   }
 
+  .order__icon-phone,
+  .order__icon-mail {
+    right: 73px;
+    top: -3px;
+  }
+
   .order__note {
     margin: 0;
     font-size: 17px;
@@ -322,9 +334,16 @@
       margin-right: 111px;
     }
 
+
     &--info {
       height: 142px;
       margin-right: 111px;
     }
+  }
+
+  .order__icon-phone,
+  .order__icon-mail {
+    right: 167px;
+    top: -5px;
   }
 }

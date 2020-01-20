@@ -1,23 +1,31 @@
 .basket-modal {
   display: none;
-  position: fixed;
 
   &--show {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.9);
+    z-index: 5;
   }
 }
 
-/*
-.basket-modal__shown {
-  position: absolute;
+.basket-modal__wrapper {
   width: $mobile-width-only;
   padding-top: 36px;
   padding-bottom: 46px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
+  background-color: #fdfdfd;
+  border: 1px solid #c7c7c7;
   box-shadow: 0 2px 2px 0 #c6c6c6;
-  */
+}
 
 .basket-modal__title {
   font-size: 25px;
@@ -48,10 +56,10 @@
   &:active {
     border-color: rgba(99, 209, 187, 1);
   }
+}
 
-  &--S {
-    border-color: rgba(99, 209, 187, 0.9);
-  }
+.basket-modal__btn--size-S {
+  border-color: rgba(99, 209, 187, 0.9);
 }
 
 .button--add {
@@ -66,7 +74,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .basket-modal__shown {
+  .basket-modal__wrapper {
     width: 566px;
     padding-left: 108px;
     padding-right: 108px;
@@ -74,13 +82,10 @@
 
   .basket-modal__btn--size {
     flex-grow: 1;
+  }
 
-    &--S {
-      margin-right: 7px;
-    }
-
-    &--M {
-      margin-right: 7px;
-    }
+  .basket-modal__btn--size-S,
+  .basket-modal__btn--size-M {
+    margin-right: 7px;
   }
 }

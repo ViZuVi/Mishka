@@ -18,97 +18,71 @@
     position: relative;
     padding-top: 65px;
     padding-right: 65px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 32px;
-      height: 37px;
-      background-image: url("../../img/icon-feature-flower.svg");
-      background-repeat: no-repeat;
-      top: 11px;
-      left: 8px;
-    }
   }
 
   &--scandinavian {
     position: relative;
     padding-top: 84px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 47px;
-      height: 27px;
-      background-image: url("../../img/icon-feature-money.svg");
-      background-repeat: no-repeat;
-      top: 30px;
-      left: 0;
-    }
   }
 
   &--repost {
     position: relative;
     padding-top: 83px;
     padding-right: 55px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 34px;
-      height: 27px;
-      background-image: url("../../img/icon-feature-heart.svg");
-      background-repeat: no-repeat;
-      top: 33px;
-      left: 7px;
-    }
-  }
-
-  &--love {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 35px;
-      height: 34px;
-      background-image: url("../../img/icon-feature-ball.svg");
-      background-repeat: no-repeat;
-      top: 31px;
-      left: 3px;
-    }
   }
 
   &--domestic {
     position: relative;
     padding-right: 10px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 55px;
-      height: 23px;
-      background-image: url("../../img/icon-feature-rocket.svg");
-      background-repeat: no-repeat;
-      top: 32px;
-      left: -6px;
-    }
   }
 
+  &--love,
+  &--domestic,
   &--gift {
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 33px;
-      height: 32px;
-      background-image: url("../../img/icon-feature-gift.svg");
-      background-repeat: no-repeat;
-      top: 30px;
-      left: 3px;
-    }
   }
+}
+
+.features__icon-flower {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  fill: #3bb09d;
+}
+
+.features__icon-money {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  fill: #3bb09d;
+}
+
+.features__icon-heart {
+  position: absolute;
+  top: 34px;
+  left: 7px;
+  fill: #3bb09d;
+}
+
+.features__icon-ball {
+  position: absolute;
+  top: 31px;
+  left: 3px;
+  fill: #3bb09d;
+}
+
+.features__icon-rocket {
+  position: absolute;
+  top: 32px;
+  left: -6px;
+  fill: #3bb09d;
+}
+
+.features__icon-gift {
+  position: absolute;
+  top: 30px;
+  left: 2px;
+  fill: #3bb09d;
 }
 
 @media (min-width: $tablet-width) {
@@ -140,55 +114,66 @@
       padding-right: 70px;
       padding-top: 110px;
       order: 3;
-
-      &::before {
-        top: 57px;
-      }
     }
 
     &--repost {
       order: 5;
       padding-top: 112px;
       padding-right: 90px;
-
-      &::before {
-        top: 63px;
-        left: 8px;
-      }
     }
 
     &--love {
       order: 2;
       padding-top: 67px;
       padding-left: 3px;
-
-      &::before {
-        top: 16px;
-        left: 7px;
-      }
     }
 
     &--domestic {
       order: 4;
       padding-top: 110px;
       padding-left: 3px;
-
-      &::before {
-        top: 60px;
-        left: -2px;
-      }
     }
 
     &--gift {
       order: 6;
       padding-left: 3px;
       padding-top: 112px;
-
-      &::before {
-        top: 60px;
-        left: 7px;
-      }
     }
+  }
+
+  .features__icon-money {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    fill: #3bb09d;
+  }
+
+  .features__icon-heart {
+    position: absolute;
+    top: 63px;
+    left: 7px;
+    fill: #3bb09d;
+  }
+
+  .features__icon-ball {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    fill: #3bb09d;
+  }
+
+  .features__icon-rocket {
+    position: absolute;
+    top: 60px;
+    left: -2px;
+    fill: #3bb09d;
+  }
+
+  .features__icon-gift {
+    position: absolute;
+    top: 59px;
+    left: 7px;
+    fill: #3bb09d;
   }
 }
 
@@ -208,28 +193,19 @@
   }
 
   .features__list-item {
-    &--love {
-      padding-left: 20px;
-
-      &::before {
-        left: 23px;
-      }
-    }
-
-    &--domestic {
-      padding-left: 20px;
-
-      &::before {
-        left: 14px;
-      }
-    }
-
+    &--love,
+    &--domestic,
     &--gift {
       padding-left: 20px;
-
-      &::before {
-        left: 23px;
-      }
     }
+  }
+
+  .features__icon-ball,
+  .features__icon-gift {
+    left: 23px;
+  }
+
+  .features__icon-rocket {
+    left: 14px;
   }
 }
