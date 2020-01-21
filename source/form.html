@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 <body>
+  <div style="display: none;">
+    <include src="./build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
@@ -29,8 +32,14 @@
     </nav>
     <nav class="site-nav site-nav--second"><!--site-nav--closed класс для закрытия меню, site-nav--opened для открытия-->
       <ul class="site-nav__list">
-        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link site-nav__item-link--search" href="">Поиск по сайту</a></li>
-        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link site-nav__item-link--cart" href="">Корзина: пока пуста</a></li>
+        <li class="site-nav__item site-nav__item--search"><a class="site-nav__item-link site-nav__item-link--search" href="#">
+          <svg class="site-nav__icon-search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
+          <span>Поиск по сайту</span></a>
+        </li>
+        <li class="site-nav__item site-nav__item--cart"><a class="site-nav__item-link site-nav__item-link--cart" href="#">
+          <svg class="site-nav__icon-cart" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+          <span>Корзина: пока пуста</span></a>
+        </li>
       </ul>
     </nav>
     <nav class="site-nav site-nav--third"><!--site-nav--closed класс для закрытия меню, site-nav--opened для открытия-->
@@ -47,8 +56,9 @@
     <section class="order">
       <form class="order__form" action="https://htmlacademy.ru/intensive/adaptive" method="post">
         <fieldset class="order__box order__box--types">
+          <legend class="visually-hidden"></legend>
           <div class="order__wrapper container">
-            <legend class="order__legend">Тип</legend>
+            <p class="order__legend">Тип</p>
             <ul class="characteristic-list">
               <li class="characteristic-list__item characteristic-list__item--type">
                 <input class="characteristic-list__input visually-hidden" type="radio" name="type-radio" id="accessories" checked>
@@ -62,8 +72,9 @@
           </div>
         </fieldset>
         <fieldset class="order__box order__box--colors">
+          <legend class="visually-hidden"></legend> <!--Легенда оформлена таким образом, чтобы ее можно было сделать флекс элементом и для успешной валидации-->
           <div class="order__wrapper order__wrapper--colors container">
-            <legend class="order__legend">Цвет</legend>
+            <p class="order__legend">Цвет</p>
             <ul class="characteristic-list characteristic-list--colors">
               <li class="characteristic-list__item characteristic-list__item--color">
                 <input class="characteristic-list__input visually-hidden" type="checkbox" id="white" checked>
@@ -93,8 +104,9 @@
           </div>
         </fieldset>
         <fieldset class="order__box order__box--name">
+          <legend class="visually-hidden"></legend>
           <div class="order__wrapper container">
-            <legend class="order__legend">ФИО</legend>
+            <p class="order__legend">ФИО</p>
             <ul class="name-list">
               <li class="name-list__item">
                 <label class="name-list__label" for="first-name">Имя:</label>
@@ -112,20 +124,25 @@
           </div>
         </fieldset>
         <fieldset class="order__box order__box--phone">
+          <legend class="visually-hidden"></legend>
           <div class="order__wrapper order__wrapper--phone container">
-            <legend class="order__legend">Тел</legend>
+            <p class="order__legend">Тел</p>
             <input class="order__contacts-input order__contacts-input--phone" type="tel" pattern="^\+7\d{3}\d{7}$" maxlength="12" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="order__icon-phone" width="25" height="24"><use xlink:href="#icon-phone"></use></svg>
           </div>
         </fieldset>
         <fieldset class="order__box order__box--email">
+          <legend class="visually-hidden"></legend>
           <div class="order__wrapper order__wrapper--email container">
-            <legend class="order__legend">E-mail</legend>
+            <p class="order__legend">E-mail</p>
             <input class="order__contacts-input order__contacts-input--email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ваш Email*" required>
+            <svg class="order__icon-mail" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
           </div>
         </fieldset>
         <fieldset class="order__box order__box--info">
+          <legend class="visually-hidden"></legend>
           <div class="order__wrapper order__wrapper--info container">
-            <legend class="order__legend">Доп</legend>
+            <p class="order__legend">Доп</p>
             <textarea class="order__contacts-input order__contacts-input--info" name="customer-info" cols="30" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
@@ -138,21 +155,34 @@
   </main>
   <footer class="page-footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo-link"><img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип магазина" width="101.615" height="34.056"></a>
+      <a class="footer__logo-link">
+        <svg class="footer__logo-item" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
+      </a>
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link social-list__link--instagram" href="#" aria-label="Перейти на страницу Инстаграмм"></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти на страницу Фейсбук"></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти на страницу Твиттер"></a></li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#" aria-label="Перейти на страницу Инстаграмм">
+            <svg class="social-list__icon-insta" width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти на страницу Фейсбук">
+            <svg class="social-list__icon-fb" width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти на страницу Твиттер">
+            <svg class="social-list__icon-twitter" width="23" height="20"><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+        </li>
       </ul>
       <div class="developer">
-        <p class="developer__text">Разработано</p>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">
-          <svg width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-          </svg>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на сайт разработчика">
+          <span class="developer__copyright">Разработано</span>
+          <svg class="developer__logo-htmlacademy" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.min.js" async></script>
 </body>
 </html>

@@ -1,17 +1,26 @@
 var openModalBtn = document.querySelector(".week-special__btn");
 var addGoodBtn = document.querySelector(".good__basket-icon");
-var searchModal = document.querySelector(".modal-search");
+var searchModal = document.querySelector(".basket-modal");
+var closeModalBtn = searchModal.querySelector(".button--add");
 
 
+if (openModalBtn) {
+  openModalBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    searchModal.classList.add("basket-modal--show");
+  });
+}
 
-openModalBtn.addEventListener("click", function (evt) {
+if (addGoodBtn) {
+  addGoodBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    searchModal.classList.add("basket-modal--show");
+  });
+}
 
-  searchModal.classList.remove("visually-hidden");
-  searchModal.classList.add("basket-modal__shown");
-});
 
-addGoodBtn.addEventListener("click", function (evt) {
-
-  searchModal.classList.remove("visually-hidden");
-  searchModal.classList.add("basket-modal__shown");
-});
+closeModalBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  searchModal.classList.remove("basket-modal--show");
+  searchModal.classList.add("basket-modal");
+})

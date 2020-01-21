@@ -22,9 +22,19 @@
     justify-content: space-between;
   }
 
+  .footer__logo-item {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .footer__wrapper {
     flex-direction: row;
-    padding-top: 32px;
+    padding-top: 25px;
   }
 
   .footer__logo-link {
@@ -37,6 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 23px;
   }
 }
