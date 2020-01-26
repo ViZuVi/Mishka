@@ -10,7 +10,7 @@
     left: 0;
     width: 320px;
     height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +20,7 @@
 .reviews__text {
   margin-top: 25px;
   font-size: 15px;
+  color: #444444;
 }
 
 .reviews__author-wraper {
@@ -50,14 +51,14 @@
 
   &--prev {
     flex-grow: 1;
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--next {
     flex-grow: 1;
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -84,13 +85,13 @@
     padding-bottom: 20px;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
 
     &::after {
@@ -98,7 +99,7 @@
       content: "";
       width: 100%;
       height: 17px;
-      background-image: url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: no-repeat;
       background-size: cover;
       bottom: -83px;
@@ -158,7 +159,7 @@
 
   .reviews__text {
     margin-top: 5px;
-    margin-right: 65px; /*для переноса "и" нужно использовать br*/
+    margin-right: 65px;
   }
 
   .reviews__write-btn {

@@ -21,9 +21,16 @@
 }
 
 .characteristic-list__label {
-  position: relative;
   display: block;
-  cursor: pointer;
+  position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.characteristic-list__input:focus + label {
+  box-shadow: 0 0 0 2px #62d1ba;
 }
 
 .characteristic-list__input + .characteristic-list__label--type {
@@ -144,7 +151,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-left: 138px;
+      margin-left: 115px;
     }
   }
 
